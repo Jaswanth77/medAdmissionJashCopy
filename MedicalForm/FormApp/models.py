@@ -49,6 +49,10 @@ class ApplicationFormModel(models.Model):
     student_name = models.CharField(max_length=500, default="", blank=True)
     course = models.CharField(max_length=200, default="", blank=True)
     date_of_birth = models.DateField(default=None, null=True, blank=True)
+    course_type = models.CharField(max_length=200, default="",blank=True,null=True)
+    aadhar_no = models.CharField(max_length=12, default="",blank=True)
+    academic_year_start = models.CharField(max_length=4,default="",null=True,blank=True)
+    academic_year_end = models.CharField(max_length=4,default="",null=True,blank=True)
     gender = models.CharField(max_length=100, default="", blank=True)
     is_hostellite = models.CharField(default=False, blank=True,max_length=200)
     community = models.CharField(
